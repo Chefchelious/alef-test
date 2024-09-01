@@ -34,7 +34,7 @@
             icon="add"
             no-caps
             color="blue-5"
-            outlinВ
+            outline
             rounded
           />
         </div>
