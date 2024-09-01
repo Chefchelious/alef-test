@@ -3,14 +3,14 @@
     <div class="container-md">
      <div v-if="parentData" class="parent-data">
        <h4 class="text-body1 q-mb-lg text-bold">Персональные данные</h4>
-       <p class="text-weight-bold q-mb-xl">{{ parentData.name }}, {{ parentData.age }}</p>
+       <p class="text-weight-bold q-mb-xl">{{ parentData.name }}, {{ parentData.age }} лет</p>
 
        <div v-if="parentData.children.length">
          <p class="q-mb-lg">Дети</p>
 
          <ul v-for="(child, index) in parentData.children" :key="index">
            <li class="child-item q-mb-md">
-             <p class="text-weight-bold">{{ child.name }}, {{ child.age }}</p>
+             <p class="text-weight-bold">{{ child.name }}, {{ child.age }} лет</p>
            </li>
          </ul>
        </div>

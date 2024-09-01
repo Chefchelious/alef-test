@@ -5,7 +5,7 @@
       <div>
         <q-input
           v-model="formData.name"
-          label="имя"
+          label="Имя"
           outlined
           lazy-rules="ondemand"
           no-error-icon
@@ -14,7 +14,7 @@
       <div>
         <q-input
           v-model="formData.age"
-          label="возраст"
+          label="Возраст"
           outlined
           mask="##"
           lazy-rules="ondemand"
@@ -34,7 +34,7 @@
             icon="add"
             no-caps
             color="blue-5"
-            outline
+            outlinВ
             rounded
           />
         </div>
@@ -44,7 +44,7 @@
             <div class="col">
               <q-input
                 v-model="child.name"
-                label="имя"
+                label="Имя"
                 outlined
                 class="q-pa-none"
                 lazy-rules="ondemand"
@@ -55,7 +55,7 @@
             <div class="col">
               <q-input
                 v-model="child.age"
-                label="возраст"
+                label="Возраст"
                 outlined
                 class="q-pa-none"
                 lazy-rules="ondemand"
