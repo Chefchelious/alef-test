@@ -3,10 +3,14 @@
     <q-header class="bg-white">
       <q-toolbar class="container">
         <q-toolbar-title
-          class="cursor-pointer flex items-center justify-between no-wrap"
-          @click="globalProperties?.$router.push('/')"
+          class="flex items-center justify-between no-wrap"
         >
-          <q-icon :name="`img:${logo}`" size="64px" />
+          <q-icon
+            class="cursor-pointer"
+            @click="globalProperties?.$router.push('/')"
+            :name="`img:${logo}`"
+            size="64px"
+          />
         </q-toolbar-title>
 
         <div class="flex items-center no-wrap q-gutter-x-md col-7">

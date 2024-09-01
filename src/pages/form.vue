@@ -89,8 +89,11 @@
 </template>
 
 <script setup lang="ts">
-import { reactive, ref } from 'vue';
+import { getCurrentInstance, reactive, ref } from 'vue';
 import { IChild } from 'src/types';
+
+const globalProperties =
+  getCurrentInstance()?.appContext.config.globalProperties;
 
 const form = ref();
 
@@ -116,9 +119,11 @@ const save = async () => {
     if (!is_valid) {
       return alert('Не заполнены обязательные поля');
     }
-    localStorage.setItem('paren', JSON.stringify(formData));
+    localStorage.setItem('parent', JSON.stringify(formData));
 
     alert('Сохранено успешно');
+
+    globalProperties?.$router.push('/preview');
   } catch (e: unknown) {
     console.error('save', e);
   }
