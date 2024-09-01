@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
-  font-weight: normal;
   list-style: none;
 }
 
@@ -30,8 +29,7 @@ button {
 }
 
 body {
-  font-family: Roboto, sans-serif;
-  color: white;
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -40,6 +38,11 @@ body {
   max-width: 1264px;
   margin: 0 auto;
   padding: 0 41px;
+}
+
+.container-md {
+  max-width: 616px;
+  margin: 0 auto;
 }
 
 .gap-sm {
